@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.name{
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    /* height: 96vh; */
+    width: 96vw;
+    border: 2px solid black;
+    margin: 0.2rem;
+    border-radius: 2px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.spanpart{
+    display: flex;
+    gap: 5px;
+    font-size: 0.6rem;
+    font-family: sans-serif;
+    padding:3px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 3px;
+}
+.heading h2{
+    font-size: x-large;
+}
+.heading p{
+    font-size: 0.7rem;
+    padding: 3px;
+}
+.footerBox{
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    padding: 0 8rem;
+}
+.footerBox p{
+    
+    font-size: 0.6rem;
+}.midpart{
+    border: 2px solid black;
+    display: grid;
+    /* gap: 0.5rem; */
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3,1fr);
+    
+}
+.midpart h3{
+    font-family:serif;
+    font-weight: 200;
+    padding: 1rem;
+}
+.projects{
+    border: 2px solid black;
+    /* width: 9rem; */
+
+}
+.projects p{
+    border-bottom: 2px solid black;
+    font-size: small;
+    padding:  1rem ;
+}
+.workExperience{
+    border: 2px solid black;
+    padding: 2px 0;
+}
+.workExperience p{
+    padding: 0 2rem;
+    font-size: 0.8rem;
+}
+@media (min-width:370px){
+    .midpart{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+@media (min-width:350px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+.education{
+    border-right: 2px solid black;
+    overflow: hidden;
+    padding: 0 1rem ;
+}
+.education p{
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+
+}
+.education ol{
+    font-size: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-inline-start: 2rem;
+}
+.courselist{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+}
+.last{
+    padding: 2px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+.review {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+@media (min-width:370px){
+    .review{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.review div{
+    border: 2px solid black;
+    width: 7rem;
+    height: 7rem;
+    font-size: 0.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    font-size: 0.6rem;
+    padding: 0 2rem;
+}
