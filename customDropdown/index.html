@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Dropdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dropdown">
+    <div class="dropdownheaderin" id="dropdownHeader" onclick="dropdown()">
+      <span id="selectedItem">Select an Item</span>
+      <span id="dropdownArrow">▾</span>
+    </div>
+    <ul class="dropdownlistin" id="dropdownList">
+      <li onclick="selectItem(this)">First Item</li>
+      <li onclick="selectItem(this)">Second Item</li>
+      <li onclick="selectItem(this)">Third Item</li>
+      <li onclick="selectItem(this)">Fourth Item</li>
+      <li onclick="selectItem(this)">Fifth Item</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
